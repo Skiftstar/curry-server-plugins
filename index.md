@@ -23,36 +23,38 @@
 
 ## **Teamchat**
 
-### Beschreibung
+> ### Beschreibung
 Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommunizieren, ohne dass normale Member diese Nachrichten sehen können
 
-### Souce-Code
+> ### Souce-Code
 To be added
 
-### Known Issues
+> ### Known Issues
 - None
 
-### Nötige Permissions
+> ### Nötige Permissions
 - core.teamchat -> Senden und Empfangen von TeamChat nachrichten
 
-### Commands
+> ### Commands
 - /tc [Nachricht] -> Senden einer Nachricht in den Teamchat
 
 ## **BungeeDMs**
 
-### Beschreibung
+> ### Beschreibung
 Erlaubt es Spielern einem anderen Spieler, der auch auf einem anderen Server innerhalb des Netzwerkes sein kann, eine private Nachricht zu schicken
 
-### Source-Code
+> ### Source-Code
 To be added
 
-### Known Issues
+> ### Known Issues
 - None
 
-### Nötige Permissions
+> ### Nötige Permissions
 - keine
 
-### Commands
+> ### Commands
 - /msg [Spieler] [Nachricht] -> Schickt eine Private Nachricht an den angegebenen Spieler
 
 # ***Downloads***
+
+kommt noch
