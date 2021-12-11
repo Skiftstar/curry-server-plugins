@@ -1,4 +1,4 @@
-# List of plugins
+# ***List of plugins***
 
 ## Done
 - Bungee Teamchat
@@ -12,7 +12,7 @@
 - Global Chat
 
 
-# Plugin Erklärungen
+# ***Plugin Erklärungen***
 ## Teamchat
 ### Nötige Permissions
 - core.teamchat -> Senden und Empfangen von TeamChat nachrichten
