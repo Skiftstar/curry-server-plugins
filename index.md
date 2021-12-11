@@ -16,7 +16,9 @@
 # ***Plugin Erklärungen***
 
 ## Teamchat
+
 ### Nötige Permissions
 - core.teamchat -> Senden und Empfangen von TeamChat nachrichten
+
 ### Commands
 - /tc [Nachricht] -> Senden einer Nachricht in den Teamchat
