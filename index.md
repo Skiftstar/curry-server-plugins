@@ -1,3 +1,35 @@
+# List of plugins
+## Done
+- Bungee Teamchat
+## Working on
+- Bungee DMs
+## To-Do
+- Tab Plugin
+- Hub Plugin
+- Global Chat
+
+
+# Plugin Erklärungen
+## Teamchat
+### Nötige Permissions
+- core.teamchat -> Senden und Empfangen von TeamChat nachrichten
+### Commands
+- /tc [Nachricht] -> Senden einer Nachricht in den Teamchat
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Example Stuff below
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Skiftstar/curry-server-plugins/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
