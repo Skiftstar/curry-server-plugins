@@ -10,8 +10,7 @@
 - Tab Plugin
 - Hub Plugin
 - Global Chat
-
-
+======
 # ***Plugin Erklärungen***
 ## Teamchat
 ### Nötige Permissions
