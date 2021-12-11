@@ -10,8 +10,11 @@
 - Tab Plugin
 - Hub Plugin
 - Global Chat
-======
+
+
+
 # ***Plugin Erklärungen***
+
 ## Teamchat
 ### Nötige Permissions
 - core.teamchat -> Senden und Empfangen von TeamChat nachrichten
