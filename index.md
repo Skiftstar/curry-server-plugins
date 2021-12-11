@@ -27,8 +27,10 @@
 Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommunizieren, ohne dass normale Member diese Nachrichten sehen können
 
 ### Souce-Code
+To be added
 
 ### Known Issues
+- None
 
 ### Nötige Permissions
 - core.teamchat -> Senden und Empfangen von TeamChat nachrichten
@@ -42,8 +44,10 @@ Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommuniziere
 Erlaubt es Spielern einem anderen Spieler, der auch auf einem anderen Server innerhalb des Netzwerkes sein kann, eine private Nachricht zu schicken
 
 ### Source-Code
+To be added
 
 ### Known Issues
+- None
 
 ### Nötige Permissions
 - keine
