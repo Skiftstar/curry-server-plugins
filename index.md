@@ -9,20 +9,19 @@
 
 ## Done
 - Bungee Teamchat
+- Bungee DMs
 
 ## Working on
-- Bungee DMs
+- Global Chat
 
 ## To-Do
 - Tab Plugin
 - Hub Plugin
-- Global Chat
-
 
 
 # ***Plugins***
 
-## Teamchat
+## **Teamchat**
 
 ### Beschreibung
 Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommunizieren, ohne dass normale Member diese Nachrichten sehen können
@@ -37,7 +36,7 @@ Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommuniziere
 ### Commands
 - /tc [Nachricht] -> Senden einer Nachricht in den Teamchat
 
-## BungeeDMs
+## **BungeeDMs**
 
 ### Beschreibung
 Erlaubt es Spielern einem anderen Spieler, der auch auf einem anderen Server innerhalb des Netzwerkes sein kann, eine private Nachricht zu schicken
