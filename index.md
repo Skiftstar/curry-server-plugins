@@ -7,14 +7,14 @@
 
 # ***To-Do List***
 
-## Done
+> ## Done
 - Bungee Teamchat
 - Bungee DMs
 
-## Working on
+> ## Working on
 - Global Chat
 
-## To-Do
+> ## To-Do
 - Tab Plugin
 - Hub Plugin
 
