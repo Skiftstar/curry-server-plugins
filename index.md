@@ -11,13 +11,13 @@
 > ## Done
 - Bungee Teamchat
 - Bungee DMs
+- Global Chat
 
 > ## Working on
-- Global Chat
+- Hub Plugin
 
 > ## To-Do
 - Tab Plugin
-- Hub Plugin
 
 
 # ***Plugins***
