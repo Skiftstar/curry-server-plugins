@@ -1,6 +1,8 @@
 package Kyu.ServerCore.Commands;
 
 import Kyu.ServerCore.Main;
+import Kyu.WaterFallLanguageHelper.LanguageHelper;
+import jdk.internal.access.JavaLangAccess;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
@@ -20,7 +22,7 @@ public class GlobalChatCommand extends Command {
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (!(sender instanceof ProxiedPlayer)) {
-            sender.sendMessage(new TextComponent("Player only!"));
+            sender.sendMessage(new TextComponent(LanguageHelper.getMess("PlayerOnly")));
             return;
         }
         ProxiedPlayer p = (ProxiedPlayer) sender;
@@ -32,13 +34,14 @@ public class GlobalChatCommand extends Command {
             else lpUser.data().add(Node.builder("core.globalenabled").build());
             Main.lp.getUserManager().saveUser(lpUser);
 
-            String stateSt = chatEnabled ? ChatColor.RED + "deaktiviert" : ChatColor.GREEN + "aktiviert";
-            p.sendMessage(new TextComponent(ChatColor.AQUA + "Du hast den Globalen Chat " + stateSt + "!"));
+            String stateSt = chatEnabled ? LanguageHelper.getMess(p, "deactivated") : LanguageHelper.getMess(p, "activated");
+            p.sendMessage(new TextComponent(LanguageHelper.getMess(p, "GlobalChatStatus")
+                    .replace("%status", stateSt)));
             return;
         }
 
         if (!p.hasPermission("core.globalenabled")) {
-            p.sendMessage(new TextComponent(ChatColor.RED + "Du hast den globalen Chat nicht an! Aktiviere ihn mit /g"));
+            p.sendMessage(new TextComponent(LanguageHelper.getMess(p, "GlobalChatNotActive")));
             return;
         }
 

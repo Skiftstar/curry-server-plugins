@@ -1,6 +1,7 @@
 package Kyu.ServerCore.Commands;
 
 import Kyu.ServerCore.Main;
+import Kyu.WaterFallLanguageHelper.LanguageHelper;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
@@ -11,23 +12,19 @@ import net.md_5.bungee.api.plugin.Command;
 public class TeamchatCommand extends Command {
 
     public TeamchatCommand(Main main) {
-        super("tc");
+        super("tc", "core.teamchat");
         main.getProxy().getPluginManager().registerCommand(main, this);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (!(sender instanceof ProxiedPlayer)) {
-            sender.sendMessage(new TextComponent("Player only!"));
+            sender.sendMessage(new TextComponent(LanguageHelper.getMess("PlayerOnly")));
             return;
         }
         ProxiedPlayer p = (ProxiedPlayer) sender;
-        if (!p.hasPermission("core.teamchat")) {
-            p.sendMessage(new TextComponent(ChatColor.RED + "Not enough permissions!"));
-            return;
-        }
         if (args.length < 1) {
-            p.sendMessage(new TextComponent(ChatColor.RED + "Please include a message"));
+            p.sendMessage(new TextComponent(LanguageHelper.getMess(p, "NEArgs")));
             return;
         }
         StringBuilder message = new StringBuilder();

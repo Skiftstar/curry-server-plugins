@@ -3,9 +3,12 @@ package Kyu.ServerCore;
 import Kyu.ServerCore.Commands.DMCommand;
 import Kyu.ServerCore.Commands.GlobalChatCommand;
 import Kyu.ServerCore.Commands.TeamchatCommand;
+import Kyu.WaterFallLanguageHelper.LanguageHelper;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
 import net.md_5.bungee.api.plugin.Plugin;
+
+import java.io.File;
 
 public final class Main extends Plugin {
 
@@ -14,6 +17,12 @@ public final class Main extends Plugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+
+        if (!getDataFolder().exists()) getDataFolder().mkdirs();
+
+
+        LanguageHelper.setup(this, "de", getResourceAsStream("de.yml"), "");
+
         try {
             lp = LuckPermsProvider.get();
         } catch (IllegalStateException e) {

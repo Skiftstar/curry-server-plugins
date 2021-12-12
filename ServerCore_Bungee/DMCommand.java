@@ -1,6 +1,7 @@
 package Kyu.ServerCore.Commands;
 
 import Kyu.ServerCore.Main;
+import Kyu.WaterFallLanguageHelper.LanguageHelper;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
@@ -20,37 +21,33 @@ public class DMCommand extends Command implements TabExecutor {
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (!(sender instanceof ProxiedPlayer)) {
-            sender.sendMessage(new TextComponent("Player only!"));
+            sender.sendMessage(new TextComponent(LanguageHelper.getMess("PlayerOnly")));
             return;
         }
         ProxiedPlayer p = (ProxiedPlayer) sender;
         if (args.length < 2) {
-            p.sendMessage(new TextComponent(ChatColor.RED + "Not enough Arguments!"));
+            p.sendMessage(new TextComponent(LanguageHelper.getMess(p, "NEArguments")));
             return;
         }
         String p2Name = args[0];
         ProxiedPlayer receiver = ProxyServer.getInstance().getPlayer(p2Name);
         if (receiver == null) {
-            p.sendMessage(new TextComponent(ChatColor.RED + "Player not found!"));
+            p.sendMessage(new TextComponent(LanguageHelper.getMess(p, "PlayerNotFound")));
             return;
         }
         StringBuilder content = new StringBuilder();
         for (int i = 1; i < args.length; i++) {
             content.append(" ").append(args[i]);
         }
-        StringBuilder sendText = new StringBuilder();
-        sendText.append(ChatColor.DARK_GRAY)
-                .append("[").append(ChatColor.GRAY)
-                .append("PLACEHOLDER_1 -> PLACEHOLDER_2")
-                .append(ChatColor.DARK_GRAY)
-                .append("]")
-                .append(content.toString());
-        p.sendMessage(new TextComponent(sendText.toString()
-                .replace("PLACEHOLDER_1", "You")
-                .replace("PLACEHOLDER_2", receiver.getDisplayName())));
-        receiver.sendMessage(new TextComponent(sendText.toString()
-                .replace("PLACEHOLDER_2", "You")
-                .replace("PLACEHOLDER_1", p.getDisplayName())));
+        p.sendMessage(new TextComponent(LanguageHelper.getMess("DMTemplate")
+                        .replace("%p1", LanguageHelper.getMess("you"))
+                        .replace("%p2", receiver.getDisplayName())
+                        .replace("%mess", content.toString())));
+
+        receiver.sendMessage(new TextComponent(LanguageHelper.getMess("DMTemplate")
+                .replace("%p2", LanguageHelper.getMess("you"))
+                .replace("%p1", receiver.getDisplayName())
+                .replace("%mess", content.toString())));
     }
 
     @Override
