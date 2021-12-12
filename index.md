@@ -95,7 +95,7 @@ Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-s
 Core Plugin für die Lobby, enthält Features wie: LobbySpawn, Protection für ins Void fallen, Server Kompass, Deaktivierung von Schaden, Hunger, etc.
 
 > ### Source-Code
-Alles Klassen des Plugins sind [hier zu finden]()
+Alle Klassen des Plugins sind [hier zu finden]()
 
 > ### Known Issues
 - Wenn du das Einstellen der Config hart verkackts, kanns sein, dass se sich selber resetted -> Backup vor'm testen!
@@ -129,6 +129,7 @@ Hier erklär ich kurz wie man die Config richtig einstellt
 - `spawnLoc` -> Position vom LobbySpawn, *nicht über config file anpassen!*
   - Wird erst gesetzt, sobald der Ingame Befehl 1mal ausgeführt wurde und der Server neugestartet wurde
 - `servers` -> Die Liste an Servern, die in den Server Kompass gepackt wird
+
 Beispiel für eine servers Sektion (# sind Kommentare):
 ```
 servers:
