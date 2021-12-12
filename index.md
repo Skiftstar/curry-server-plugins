@@ -4,7 +4,7 @@
   - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
   - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
   - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
-- [Downloads](https://skiftstar.github.io/curry-server-plugins/#downloads)
+- [Downloads](https://skiftstar.github.io/curry-server-plugins/#download-links)
 
 # ***To-Do List***
 
@@ -86,7 +86,7 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 > ### Download
 Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-server-plugins/#servercore-for-bungee)
 
-# ***Downloads***
+# ***Download Links***
 
 ## **ServerCore for Bungee**
 
