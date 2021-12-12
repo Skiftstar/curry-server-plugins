@@ -50,10 +50,11 @@ To be added
 - None
 
 > ### Nötige Permissions
-- keine
+- core.dm -> Erlaubt Benutzung des /dm Commands
 
 > ### Commands
-- /msg [Spieler] [Nachricht] -> Schickt eine Private Nachricht an den angegebenen Spieler
+- /dm [Spieler] [Nachricht] -> Schickt eine Private Nachricht an den angegebenen Spieler
+  - Aliases: /tell /msg
 
 # ***Downloads***
 
