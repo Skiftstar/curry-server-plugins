@@ -27,7 +27,7 @@
 Erlaubt es dem Team, unabhängig von wer auf welchem Server ist, zu kommunizieren, ohne dass normale Member diese Nachrichten sehen können
 
 > ### Souce-Code
-To be added
+Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/blob/gh-pages/ServerCore_Bungee/TeamchatCommand.java)
 
 > ### Known Issues
 - None
@@ -44,10 +44,10 @@ To be added
 Erlaubt es Spielern einem anderen Spieler, der auch auf einem anderen Server innerhalb des Netzwerkes sein kann, eine private Nachricht zu schicken
 
 > ### Source-Code
-To be added
+Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/blob/gh-pages/ServerCore_Bungee/DMCommand.java)
 
 > ### Known Issues
-- None
+- TabCompleter funktioniert nur bei /dm, da /msg und /tell Minecraft/Spigot commands sind und der TabCompleter da nich überschrieben wird
 
 > ### Nötige Permissions
 - core.dm -> Erlaubt Benutzung des /dm Commands
