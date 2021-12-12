@@ -3,6 +3,7 @@
 - [Plugins](https://skiftstar.github.io/curry-server-plugins/#plugins)
   - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
   - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
+  - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
 - [Downloads](https://skiftstar.github.io/curry-server-plugins/#downloads)
 
 # ***To-Do List***
@@ -55,6 +56,26 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 > ### Commands
 - /dm [Spieler] [Nachricht] -> Schickt eine Private Nachricht an den angegebenen Spieler
   - Aliases: /tell /msg
+
+## **GlobalChat**
+
+> ### Beschreibung
+Erlaubt es Spielern den Serverübergreifenden Chat zu sehen und auch darin zu schreiben
+
+> ### Source-Code
+Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/blob/gh-pages/ServerCore_Bungee/GlobalChatCommand.java)
+
+> ### Known Issues
+- Spieler mit der Permission "*" können den Globat Chat nicht deaktivieren
+
+> ### Nötige Permissions
+- core.global -> Erlaubt es den /g Command zu verwenden
+- core.globalenabled -> Bestimmt ob ein Spieler den Global Chat sehen kann/Darin schreiben kann
+  - Permission muss *nicht* manuell gesetzt werden! Sie wird über den /g Command angepasst
+
+> ### Commands
+- /g (Nachricht) -> Schickt eine Nachricht in den Globalen Chat *ODER* aktiviert/deaktiviert den Globalen Chat, falls keine Nachricht eingegeben wird
+  - Aliases: /global
 
 # ***Downloads***
 
