@@ -14,9 +14,10 @@
 - Bungee Teamchat
 - Bungee DMs
 - Global Chat
+- Hub Plugin
 
 > ## Working on
-- Hub Plugin
+- Language Support API
 
 > ## To-Do
 - Tab Plugin
