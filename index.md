@@ -94,4 +94,4 @@ Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-s
 Beinhaltet [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat) [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms) und [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
 
 > ### Link
-Die .jar kann [hier heruntergeladen werden] (https://github.com/Skiftstar/curry-server-plugins/releases/tag/BungeeCord)
+Die .jar kann [hier heruntergeladen werden](https://github.com/Skiftstar/curry-server-plugins/releases/tag/BungeeCord)
