@@ -1,6 +1,7 @@
 # ***Table of Contents***
 - [To-Do List (plugin list)](https://skiftstar.github.io/curry-server-plugins/#to-do-list)
 - [Plugins](https://skiftstar.github.io/curry-server-plugins/#plugins)
+  - [LanguageHelper API](https://skiftstar.github.io/curry-server-plugins/#language-helper-api)
   - ServerCore for Bungee
     - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
     - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
@@ -15,15 +16,25 @@
 - Bungee DMs
 - Global Chat
 - Hub Plugin
+- Language Support API (both Spigot and Bungee)
 
 > ## Working on
-- Language Support API
+- Tab Plugin
 
 > ## To-Do
-- Tab Plugin
+- Nothing for now
 
 
 # ***Plugins***
+
+## **Language Helper API**
+
+> ### Beschreibung
+Diese kleine API ermöglicht es is mir ohne copy-pasting und sehr einfach Multi-Language Support in die Plugins zu bringen
+
+> ### Source Code
+Der Spigot Code kann [hier gefunden werden](https://github.com/Skiftstar/SpigotLangaugeHelper)
+Der Bungee Code kann [hier gefunden werden](https://github.com/Skiftstar/WaterfallLanguageHelper)
 
 ## **Teamchat**
 
@@ -96,7 +107,7 @@ Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-s
 Core Plugin für die Lobby, enthält Features wie: LobbySpawn, Protection für ins Void fallen, Server Kompass, Deaktivierung von Schaden, Hunger, etc.
 
 > ### Source-Code
-Alle Klassen des Plugins sind [hier zu finden]()
+Alle Klassen des Plugins sind [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/tree/gh-pages/LobbyCore)
 
 > ### Known Issues
 - Wenn du das Einstellen der Config hart verkackts, kanns sein, dass se sich selber resetted -> Backup vor'm testen!
@@ -162,7 +173,7 @@ servers:
 ```
 
 > ### Download
-To be added
+Der download kann [hier gefunden werden](https://skiftstar.github.io/curry-server-plugins/#lobby-core)
 
 # ***Download Links***
 
@@ -176,3 +187,14 @@ Der Code aller Klassen des Plugins kann [hier gefunden werden](https://github.co
 
 > ### Link
 Die .jar kann [hier heruntergeladen werden](https://github.com/Skiftstar/curry-server-plugins/releases/tag/BungeeCord)
+
+## **Lobby Core**
+
+> ### Beschreibung
+siehe oben
+
+> ### Source Code
+siehe oben
+
+> ### Link
+die .jar kann [hier heruntergeladen werden](https://github.com/Skiftstar/curry-server-plugins/releases/tag/LobbyCore)
