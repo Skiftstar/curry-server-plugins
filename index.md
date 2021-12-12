@@ -39,6 +39,9 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 > ### Commands
 - /tc [Nachricht] -> Senden einer Nachricht in den Teamchat
 
+> ### Download
+Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-server-plugins/#servercore-for-bungee)
+
 ## **BungeeDMs**
 
 > ### Beschreibung
@@ -56,6 +59,9 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 > ### Commands
 - /dm [Spieler] [Nachricht] -> Schickt eine Private Nachricht an den angegebenen Spieler
   - Aliases: /tell /msg
+
+> ### Download
+Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-server-plugins/#servercore-for-bungee)
 
 ## **GlobalChat**
 
@@ -77,6 +83,15 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - /g (Nachricht) -> Schickt eine Nachricht in den Globalen Chat *ODER* aktiviert/deaktiviert den Globalen Chat, falls keine Nachricht eingegeben wird
   - Aliases: /global
 
+> ### Download
+Plugin ist Teil von [ServerCore für Bungee](https://skiftstar.github.io/curry-server-plugins/#servercore-for-bungee)
+
 # ***Downloads***
 
-kommt noch
+## **ServerCore for Bungee**
+
+> ### Beschreibung
+Beinhaltet [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat) [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms) und [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
+
+> ### Link
+Die .jar kann [hier heruntergeladen werden] (https://github.com/Skiftstar/curry-server-plugins/releases/tag/BungeeCord)
