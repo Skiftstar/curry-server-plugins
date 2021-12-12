@@ -1,9 +1,10 @@
 # ***Table of Contents***
 - [To-Do List (plugin list)](https://skiftstar.github.io/curry-server-plugins/#to-do-list)
 - [Plugins](https://skiftstar.github.io/curry-server-plugins/#plugins)
-  - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
-  - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
-  - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
+  - ServerCore for Bungee
+    - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
+    - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
+    - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
 - [Downloads](https://skiftstar.github.io/curry-server-plugins/#download-links)
 
 # ***To-Do List***
