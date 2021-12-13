@@ -47,7 +47,7 @@ Info: # Darfst du nicht ändern
   # NoLangSet darfst du NICHT ändern, das hinter dem Doppelpunkt DARFST du editieren, das ist die Nachricht ingame dann
 ```
 
-## **Nachrichten anpassen**
+## **Sprachen adden**
 Zu jedem Plugin lässt sich im `Plugins folder` ein Ordner mit dem passenden Namen des Plugins finden. In diesem Ordner sind alle Sprachen im `locales` Ordner aufgelistet
 
 Um eine Sprache hinzuzufügen:
