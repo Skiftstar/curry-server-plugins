@@ -1,10 +1,8 @@
 package Kyu.LobbyCore;
 
 import Kyu.LangSupport.LanguageHelper;
+import Kyu.LobbyCore.Commands.Commands;
 import Kyu.LobbyCore.Listeners.LobbyListeners;
-import Kyu.LobbyCore.Commands.SpawnCommand;
-import Kyu.LobbyCore.Commands.SpawnPosCommand;
-import Kyu.LobbyCore.Commands.VoidCommand;
 import Kyu.LobbyCore.Listeners.ItemListener;
 import Kyu.LobbyCore.Listeners.JoinListener;
 import Kyu.LobbyCore.Listeners.VoidListener;
@@ -24,6 +22,7 @@ public final class Main extends JavaPlugin {
     public static Logger logger;
     public static List<Server> servers = new ArrayList<>();
     public static Location spawnLoc = null;
+    public static LanguageHelper helper;
 
 
     @Override
@@ -35,18 +34,17 @@ public final class Main extends JavaPlugin {
             saveConfig();
         }
         getConfig().options().copyDefaults(false);
-
-        LanguageHelper.setup(this, "de", getTextResource("de.yml"), Util.color("&6[Lobby] "));
-
+        helper = new LanguageHelper(this, "de", getTextResource("de.yml"), Util.color("&6[Lobby] "));
 
         GameMode gamemode;
         try {
             gamemode = GameMode.valueOf(getConfig().getString("defaultGamemode"));
         } catch (IllegalArgumentException e) {
-            logger.severe(LanguageHelper.getMess("InvalidGamemode"));
+            logger.severe(helper.getMess("InvalidGamemode"));
             gamemode = GameMode.ADVENTURE;
         }
         JoinListener.defaultMode = gamemode;
+
         if (getConfig().get("spawnLoc") != null) {
             try {
                 double x = getConfig().getDouble("spawnLoc.X");
@@ -57,11 +55,11 @@ public final class Main extends JavaPlugin {
                 String world = getConfig().getString("spawnLoc.World");
                 spawnLoc = new Location(Bukkit.getWorld(world), x, y, z, yaw, pitch);
             } catch (Exception e) {
-                logger.severe(LanguageHelper.getMess("SpawnLocationError"));
+                logger.severe(helper.getMess("SpawnLocationError"));
             }
         }
-        loadServers();
 
+        loadServers();
         getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
 
         new JoinListener(this);
@@ -69,9 +67,7 @@ public final class Main extends JavaPlugin {
         new ItemListener(this);
         new LobbyListeners(this);
 
-        new VoidCommand(this);
-        new SpawnPosCommand(this);
-        new SpawnCommand(this);
+        Commands.initCommands(this);
     }
 
     private void loadServers() {
@@ -83,7 +79,7 @@ public final class Main extends JavaPlugin {
             try {
                 mat = Material.valueOf(getConfig().getString("servers." + serverSt + ".block"));
             } catch (IllegalArgumentException e) {
-                logger.severe(LanguageHelper.getMess("InvalidMaterial")
+                logger.severe(helper.getMess("InvalidMaterial")
                         .replace("%server", serverSt));
                 continue;
             }
