@@ -2,6 +2,7 @@
 - [To-Do List (plugin list)](https://skiftstar.github.io/curry-server-plugins/#to-do-list)
 - [Plugins](https://skiftstar.github.io/curry-server-plugins/#plugins)
   - [LanguageHelper API](https://skiftstar.github.io/curry-server-plugins/#language-helper-api)
+  - [CommandHelper API](https://skiftstar.github.io/curry-server-plugins/#command-helper-api)
   - ServerCore for Bungee
     - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
     - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
@@ -35,6 +36,15 @@ Diese kleine API ermöglicht es is mir ohne copy-pasting und sehr einfach Multi-
 > ### Source Code
 Der Spigot Code kann [hier gefunden werden](https://github.com/Skiftstar/SpigotLangaugeHelper)
 Der Bungee Code kann [hier gefunden werden](https://github.com/Skiftstar/WaterfallLanguageHelper)
+
+## **Command Helper API**
+
+> ### Beschreibung
+Für kleine Commands verwende ich meine eigene Command Helper API, weshalb manche Commands im SourceCode vlt. anders aussehen, als man es gewohnt ist.
+
+> ### Source Code und Documentation
+Der Code kann [hier gefunden werden](https://github.com/Skiftstar/SpigotCommandHelper/blob/main/src/main/java/Kyu/SCommand.java)
+Die Documentation kann [hier gefunden werden](https://github.com/Skiftstar/SpigotCommandHelper/blob/main/README.md)
 
 ## **Teamchat**
 
