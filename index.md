@@ -133,7 +133,7 @@ Alle Klassen des Plugins sind [hier zu finden](https://github.com/Skiftstar/curr
 Hier erklär ich kurz wie man die Config richtig einstellt
 *Wichtig*: Vor Config änderungen: Server stopppen, dann config anpassen, dann Server neu starten!
 
-- `defaultGamemode` -> bestimmt in welchen GameMode der Spieler onJoin gesetzt wird
+> - `defaultGamemode` -> bestimmt in welchen GameMode der Spieler onJoin gesetzt wird
   - Mögliche Values: `ADVENTURE`, `CREATIVE`, `SURVIVAL`, `SPECTATOR`
 - `resetOnVoid` -> Void Protection, *nicht über config file*, sondern über ingame Befehl ändern!
 - `serverInterfaceTitle` -> Name vom Inventar, das der Kompass aufmacht
