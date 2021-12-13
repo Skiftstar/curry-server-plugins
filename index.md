@@ -1,5 +1,8 @@
 # ***Table of Contents***
 - [To-Do List (plugin list)](https://skiftstar.github.io/curry-server-plugins/#to-do-list)
+- [Admin Stuff](https://skiftstar.github.io/curry-server-plugins/#admin-stuff)
+  - [Wie passe ich Nachrichte an?](https://skiftstar.github.io/curry-server-plugins/#nachrichten-anpassen)
+  - [Wie füge ich neue Sprachen hinzu?](https://skiftstar.github.io/curry-server-plugins/#sprachen-adden) 
 - [Plugins](https://skiftstar.github.io/curry-server-plugins/#plugins)
   - [LanguageHelper API](https://skiftstar.github.io/curry-server-plugins/#language-helper-api)
   - [CommandHelper API](https://skiftstar.github.io/curry-server-plugins/#command-helper-api)
@@ -26,6 +29,32 @@
 > ## To-Do
 - Nothing for now
 
+# ***Admin Stuff***
+
+## **Nachrichten anpassen**
+Zu jedem Plugin lässt sich im `Plugins folder` ein Ordner mit dem passenden Namen des Plugins finden. In diesem Ordner sind alle Sprachen im `locales` Ordner aufgelistet
+
+Um eine Sprache zu editieren:
+1. Datei mit TextEditor öffnen (am besten [Notepad++](https://notepad-plus-plus.org/downloads/) oder [VSCode](https://code.visualstudio.com/download))
+2. In der Datei findest du die Nachrichten in Sektionen aufgeteilt. Jede Sektion besteht aus Nachrichten oder Beschreibungen
+3. Editiere nur die Werte der Nachrichten Keys
+
+Beispiel (# sind Kommentare):
+```
+Info: # Darfst du nicht ändern
+  NoLangSet: '&aDu hast noch keine Sprache gesetzt, daher wird sie auf %default gesetzt'
+  
+  # NoLangSet darfst du NICHT ändern, das hinter dem Doppelpunkt DARFST du editieren, das ist die Nachricht ingame dann
+```
+
+## **Nachrichten anpassen**
+Zu jedem Plugin lässt sich im `Plugins folder` ein Ordner mit dem passenden Namen des Plugins finden. In diesem Ordner sind alle Sprachen im `locales` Ordner aufgelistet
+
+Um eine Sprache hinzuzufügen:
+1. Kopiere die Datei "de.yml", das ist die Standarddatei, indem du sie anklickst und Strg + c drückst
+2. Drücke Strg + v
+3. Bennene die Datei passend um (z.b. en.yml, es.yml), die Endung muss aber .yml sein! Der Name entscheidet wie die Sprache ingame angezeigt wird
+4. Passe die Nachrichten in der Datei passend zur Sprache an (siehe [hier](https://skiftstar.github.io/curry-server-plugins/#nachrichten-anpassen) falls du nicht weisst wie)
 
 # ***Plugins***
 
