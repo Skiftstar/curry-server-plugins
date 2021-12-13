@@ -53,7 +53,7 @@ Zu jedem Plugin lässt sich im `Plugins folder` ein Ordner mit dem passenden Nam
 Um eine Sprache hinzuzufügen:
 1. Kopiere die Datei "de.yml", das ist die Standarddatei, indem du sie anklickst und Strg + c drückst
 2. Drücke Strg + v
-3. Bennene die Datei passend um (z.b. en.yml, es.yml), die Endung muss aber .yml sein! Der Name entscheidet wie die Sprache ingame angezeigt wird
+3. Bennene die neu erstellte Datei passend um (z.b. en.yml, es.yml), die Endung muss aber .yml sein! Der Name entscheidet wie die Sprache ingame angezeigt wird
 4. Passe die Nachrichten in der Datei passend zur Sprache an (siehe [hier](https://skiftstar.github.io/curry-server-plugins/#nachrichten-anpassen) falls du nicht weisst wie)
 
 # ***Plugins***
