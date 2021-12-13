@@ -18,6 +18,7 @@
 - Global Chat
 - Hub Plugin
 - Language Support API (both Spigot and Bungee)
+- Command Helper API (nur Spigot)
 
 > ## Working on
 - Tab Plugin
