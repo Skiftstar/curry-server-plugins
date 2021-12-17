@@ -22,12 +22,14 @@
 - Hub Plugin
 - Language Support API (both Spigot and Bungee)
 - Command Helper API (nur Spigot)
-
-> ## Working on
 - Tab Plugin
 
+> ## Working on
+- Kleinere Commands (Gamemode, tp, etc.)
+
 > ## To-Do
-- Nothing for now
+- LuckPerms Blocker
+- Scoreboard
 
 # ***Admin Stuff***
 
