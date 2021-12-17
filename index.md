@@ -11,6 +11,7 @@
     - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
     - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
   - [LobbyCore](https://skiftstar.github.io/curry-server-plugins/#lobbycore)
+  - [ServerCore](https://skiftstar.github.io/curry-server-plugins/#servercore)
 - [Downloads](https://skiftstar.github.io/curry-server-plugins/#download-links)
 
 # ***To-Do List***
@@ -92,7 +93,7 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - None
 
 > ### Nötige Permissions
-- `core.teamchat` -> Senden und Empfangen von TeamChat nachrichten
+- `bcore.teamchat` -> Senden und Empfangen von TeamChat nachrichten
 
 > ### Commands
 - `/tc [Nachricht]` -> Senden einer Nachricht in den Teamchat
@@ -112,7 +113,7 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - TabCompleter funktioniert nur bei /dm, da /msg und /tell Minecraft/Spigot commands sind und der TabCompleter da nich überschrieben wird
 
 > ### Nötige Permissions
-- `core.dm` -> Erlaubt Benutzung des /dm Commands
+- `bcore.dm` -> Erlaubt Benutzung des /dm Commands
 
 > ### Commands
 - `/dm [Spieler] [Nachricht]` -> Schickt eine Private Nachricht an den angegebenen Spieler
@@ -133,8 +134,8 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - Spieler mit der Permission "*" können den Globat Chat nicht deaktivieren
 
 > ### Nötige Permissions
-- `core.global` -> Erlaubt es den /g Command zu verwenden
-- `core.globalenabled` -> Bestimmt ob ein Spieler den Global Chat sehen kann/Darin schreiben kann
+- `bcore.global` -> Erlaubt es den /g Command zu verwenden
+- `bcore.globalenabled` -> Bestimmt ob ein Spieler den Global Chat sehen kann/Darin schreiben kann
   - Permission muss *nicht* manuell gesetzt werden! Sie wird über den /g Command angepasst
 
 > ### Commands
@@ -219,6 +220,40 @@ servers:
 > ### Download
 Der download kann [hier gefunden werden](https://skiftstar.github.io/curry-server-plugins/#lobby-core)
 
+## **ServerCore**
+
+> ### Beschreibung
+Dieses Plugin sollte auf jeden Server im Netzwerk kommen, es stellt die wichtigsten Commands und Features bereit
+
+> ### Source-Code
+Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
+
+> ### Known Issues
+- None
+
+> ### Nötige Permissions
+- `core.gamemode` -> Erlaubt es den /gamemode Command zu verwenden
+- `core.gamemode.other` -> Erlaubt es den Gamemode anderer Spieler zu ändern
+    - Gibt dem Spieler automatisch auch die `core.gamemode` Permission
+- `core.teleport` -> Erlaubt es den /teleport Command zu verwenden
+- `core.teleport.others` -> Erlaubt es andere Spieler zu teleportier
+    - Gibt dem Spieler automatisch auch die `core.teleport` Permission
+- `core.colorchat` -> Erlaubt es dem Spieler im Lokalen Chat in Farbe zu schreiben
+- `core.*` -> Gibt alle obigen Permissions
+
+> ### Commands
+- `/gamemode [GAMEMODE] (Spieler)` -> Setzt den Spielmodus des Spielers zu dem angegebenen Modus
+    - Aliases: `/gm`
+    - Es sind sowohl Zahlen (0 - 3) oder Namen (creative, survival, spectator, adventure) möglich
+- `/teleport [Spieler/Koordinaten] (Spieler/Koordinaten)` -> Teleportiert sich selbst (oder einen anderen Spieler) zu den angegebenen Koordinaten oder dem angegebenen Spieler
+    - Aliases: `/tp`
+
+> ### Andere Features
+- Custom Join/Leave Nachrichten
+    - Können in den Sprachdateien für jede Sprache angepasst werden
+- Chat Formatting
+    - Template kann in den Sprachdateien für jede Sprache angepasst werden
+
 # ***Download Links***
 
 ## **ServerCore for Bungee**
@@ -242,3 +277,14 @@ siehe oben
 
 > ### Link
 die .jar kann [hier heruntergeladen werden](https://github.com/Skiftstar/curry-server-plugins/releases/tag/LobbyCore)
+
+## **Server Core**
+
+> ### Beschreibung
+siehe oben
+
+> ### Source Code
+siehe oben
+
+> ### Link
+Kommt noch
