@@ -48,6 +48,7 @@ Info: # Darfst du nicht ändern
   NoLangSet: '&aDu hast noch keine Sprache gesetzt, daher wird sie auf %default gesetzt'
   
   # NoLangSet darfst du NICHT ändern, das hinter dem Doppelpunkt DARFST du editieren, das ist die Nachricht ingame dann
+  # Platzhalter (z.B. das %default hier) dürfen weggelassen werden. Wenn du sie benutzt, darfst du den Namen des Platzhalters aber nicht ändern
 ```
 
 Prefixe von Nachrichten (z.B. das [LobbyCore] vor Nachrichten) sind meist in der Config der Plugins editierbar
@@ -226,7 +227,7 @@ Der download kann [hier gefunden werden](https://skiftstar.github.io/curry-serve
 Dieses Plugin sollte auf jeden Server im Netzwerk kommen, es stellt die wichtigsten Commands und Features bereit
 
 > ### Source-Code
-Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
+Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/tree/gh-pages/ServerCore)
 
 > ### Known Issues
 - None
@@ -249,6 +250,8 @@ Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
     - Es sind sowohl Zahlen (0 - 3) oder Namen (creative, survival, spectator, adventure) möglich
 - `/teleport [Spieler/Koordinaten] (Spieler/Koordinaten)` -> Teleportiert sich selbst (oder einen anderen Spieler) zu den angegebenen Koordinaten oder dem angegebenen Spieler
     - Aliases: `/tp`
+- `/discord` -> Gibt den Discord Link aus
+  - Aliases: `/dc`
 
 > ### Andere Features
 - Custom Join/Leave Nachrichten
@@ -258,6 +261,31 @@ Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
 - LuckPerms Weight Check
     - Spieler mit Zugriff auf LuckPerms können User/Gruppen mit einer höheren Weight als die Gruppe des Editierenden nicht editieren
         - Lässt sich mit Permissions `core.ignoreLuckDenial` bzw. `*` umgehen
+- Scoreboard
+  - Kann in den Sprachdateien für jede Sprache angepasst werden
+
+> ### Config
+# sind Kommentare
+```
+#Der Prefix vor Nachrichten von dem Plugin
+chatPrefix: "&6[PixelCore]"
+
+#Der Name im Scoreboard Titel
+serverName: "&aPixel&cWar"
+
+#Nach wie vielen Sekunden das Scoreboard aktualisiert werden soll
+ScoreboardRefreshDelay: 5
+
+#Welche Zeichenfolge für die Ranganzeige im Scoreboard vom Gruppenprefix ignoriert werden soll
+filterFromPrefixForScoreboard: "|"
+
+#Der Discord link für /discord
+discordLink: "https://discord.gg/Fce224eSzf"
+```
+
+> ### Download
+Der download kann [hier gefunden werden](https://skiftstar.github.io/curry-server-plugins/#server-core)
+
 
 # ***Download Links***
 
@@ -292,4 +320,4 @@ siehe oben
 siehe oben
 
 > ### Link
-Kommt noch
+die .jar kann [hier heruntergeladen werden](https://github.com/Skiftstar/curry-server-plugins/releases/tag/ServerCore)
