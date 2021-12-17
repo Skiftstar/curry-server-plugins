@@ -240,6 +240,8 @@ Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
     - Gibt dem Spieler automatisch auch die `core.teleport` Permission
 - `core.colorchat` -> Erlaubt es dem Spieler im Lokalen Chat in Farbe zu schreiben
 - `core.*` -> Gibt alle obigen Permissions
+- `core.ignoreLuckDenial` -> Umgeht den LuckPerms Weight check
+    - ist NICHT in `core.*` enthalten
 
 > ### Commands
 - `/gamemode [GAMEMODE] (Spieler)` -> Setzt den Spielmodus des Spielers zu dem angegebenen Modus
@@ -253,6 +255,9 @@ Klasse des Commands ist [hier zu finden] (KOMMT NOCH)
     - Können in den Sprachdateien für jede Sprache angepasst werden
 - Chat Formatting
     - Template kann in den Sprachdateien für jede Sprache angepasst werden
+- LuckPerms Weight Check
+    - Spieler mit Zugriff auf LuckPerms können User/Gruppen mit einer höheren Weight als die Gruppe des Editierenden nicht editieren
+        - Lässt sich mit Permissions `core.ignoreLuckDenial` bzw. `*` umgehen
 
 # ***Download Links***
 
