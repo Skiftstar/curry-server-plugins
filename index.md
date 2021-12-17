@@ -24,13 +24,15 @@
 - Language Support API (both Spigot and Bungee)
 - Command Helper API (nur Spigot)
 - Tab Plugin
-
-> ## Working on
 - Kleinere Commands (Gamemode, tp, etc.)
-
-> ## To-Do
 - LuckPerms Blocker
 - Scoreboard
+
+> ## Working on
+- Nix rn
+
+> ## To-Do
+- Spielsprachen Erfassung für Language API
 
 # ***Admin Stuff***
 
