@@ -265,7 +265,8 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
   - Kann in den Sprachdateien für jede Sprache angepasst werden
 
 > ### Config
-# sind Kommentare
+
+Kommentare = #
 ```
 #Der Prefix vor Nachrichten von dem Plugin
 chatPrefix: "&6[PixelCore]"
