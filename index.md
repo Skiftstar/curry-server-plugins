@@ -7,6 +7,7 @@
   - [LanguageHelper API](https://skiftstar.github.io/curry-server-plugins/#language-helper-api)
   - [CommandHelper API](https://skiftstar.github.io/curry-server-plugins/#command-helper-api)
   - ServerCore for Bungee
+    - [Generelle Commands](https://skiftstar.github.io/curry-server-plugins/#bungee-generelle-commands)
     - [TeamChat](https://skiftstar.github.io/curry-server-plugins/#teamchat)
     - [BungeeDMs](https://skiftstar.github.io/curry-server-plugins/#bungeedms)
     - [GlobalChat](https://skiftstar.github.io/curry-server-plugins/#globalchat)
@@ -24,15 +25,13 @@
 - Language Support API (both Spigot and Bungee)
 - Command Helper API (nur Spigot)
 - Tab Plugin
-- Kleinere Commands (Gamemode, tp, etc.)
-- LuckPerms Blocker
-- Scoreboard
 
 > ## Working on
-- Nix rn
+- Kleinere Commands (Gamemode, tp, etc.)
 
 > ## To-Do
-- Spielsprachen Erfassung für Language API
+- LuckPerms Blocker
+- Scoreboard
 
 # ***Admin Stuff***
 
@@ -83,6 +82,22 @@ Für kleine Commands verwende ich meine eigene Command Helper API, weshalb manch
 > ### Source Code und Documentation
 Der Code kann [hier gefunden werden](https://github.com/Skiftstar/SpigotCommandHelper/blob/main/src/main/java/Kyu/SCommand.java)
 Die Documentation kann [hier gefunden werden](https://github.com/Skiftstar/SpigotCommandHelper/blob/main/README.md)
+
+## **Bungee Generelle Commands**
+> ### Beschreibung
+Hier sind einfach Commands aufgelistet, die nich wirklich als eigenes großes Feature gelten
+
+> ### Source-Code
+Kommt noch
+
+> ### Known Issues
+- None
+
+> ### Nötige Permissions
+- `bcore.reload` -> Erlaubt Benutzung des /breload Commands
+
+> ### Commands
+- `/breload` -> Relaoded the Config und die Language Files vom Plugin, wodurch man den Proxy nich neustarten muss
 
 ## **Teamchat**
 
@@ -169,6 +184,8 @@ Alle Klassen des Plugins sind [hier zu finden](https://github.com/Skiftstar/curr
 - `lobbycore.setSpawn` -> Du kannst den /setSpawn Command verwenden
 - `lobbycore.spawn` -> Du kannst den /spawn Command verwenden
 - `lobbycore.bypass` -> Gibt dir alle bypass permissions
+- `lobbycore.reload` -> Du kannst den /lReload Command verwenden
+- `lobbycore.servers` -> Du kannst den /servers Command verwenden
 - `lobbycore.*` -> Gibt dir alle Permissions für das Plugin
 
 > ### Commands
@@ -176,6 +193,8 @@ Alle Klassen des Plugins sind [hier zu finden](https://github.com/Skiftstar/curr
   - aliases: `/void`, `/tr`
 - `/setSpawn` -> Setzt den LobbySpawn auf deine Position (Auch Blickrichtung!)
 - `/spawn` -> Teleportiert dich zum LobbySpawn
+- `/lReload` -> Reloaded die Plugin Config und die Language Files wodurch man nich den kompletten Server reloaden muss
+- `/servers` -> Zeigt das ServerAuswahl GUI
 
 > ### Config einstellen
 Hier erklär ich kurz wie man die Config richtig einstellt
@@ -245,6 +264,7 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - `core.*` -> Gibt alle obigen Permissions
 - `core.ignoreLuckDenial` -> Umgeht den LuckPerms Weight check
     - ist NICHT in `core.*` enthalten
+- `core.reload` -> Erlaubt es den /sReload Command zu verwenden
 
 > ### Commands
 - `/gamemode [GAMEMODE] (Spieler)` -> Setzt den Spielmodus des Spielers zu dem angegebenen Modus
@@ -254,6 +274,7 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
     - Aliases: `/tp`
 - `/discord` -> Gibt den Discord Link aus
   - Aliases: `/dc`
+- `/sReload` -> Reloaded die Plugin Config und die Language Files wodurch man nicht den kompletten Server reloaden muss
 
 > ### Andere Features
 - Custom Join/Leave Nachrichten
