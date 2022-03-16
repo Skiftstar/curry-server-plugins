@@ -242,6 +242,33 @@ servers:
 > ### Download
 Der download kann [hier gefunden werden](https://skiftstar.github.io/curry-server-plugins/#lobby-core)
 
+## **PixEssentials**
+
+Dieses Plugin ist wie ein Essentials Ersatz, der nicht komplett Feature bloated ist
+
+> ### Source-Code
+Kein Source-Code
+
+> ### Known Issues
+None
+
+> ### Nötige Permissions
+- `core.essentials.setSpawn` -> Erlaubt den /setSpawn Command zu verwenden
+- `core.essentials.spawn` -> Erlaubt den /spawn Command zu verwenden
+- `core.essentials.reload` -> Erlaubt den /eReload Command zu verwenden
+- `core.essentials.sethome` -> Erlaubt den /setHome Command zu vewenden
+- `core.essentials.home` -> Erlaubt den /home Command zu verwenden
+- `core.essentials.warp` -> Erlaubt den /warp und /listwarps Command zu verwenden
+- `core.essentials.warp.admin` -> Erlaubt den /delwarp und /setwarp Command zu verwenden
+- `core.essentials.tpa` -> Erlaubt den /tpa Command zu verwenden
+- `core.essentials.tpaccept` -> Erlaubt den /tpaccept Command zu verwenden
+- `core.essentials.smite` -> Erlaubt den /smite Command zu verwenden
+- `core.essentials.enchant` -> Erlaubt den /enchant Command zu verwenden
+
+
+> ### Commands
+
+
 ## **ServerCore**
 
 > ### Beschreibung
@@ -251,7 +278,7 @@ Dieses Plugin sollte auf jeden Server im Netzwerk kommen, es stellt die wichtigs
 Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-server-plugins/tree/gh-pages/ServerCore)
 
 > ### Known Issues
-- None
+- /invsee zeigt Offhand nicht
 
 > ### Nötige Permissions
 - `core.gamemode` -> Erlaubt es den /gamemode Command zu verwenden
@@ -265,6 +292,9 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - `core.ignoreLuckDenial` -> Umgeht den LuckPerms Weight check
     - ist NICHT in `core.*` enthalten
 - `core.reload` -> Erlaubt es den /sReload Command zu verwenden
+- `core.essentials.vanish` -> Erlaubt den /vanish Command zu verwenden
+- `core.essentials.invsee` -> Erlaubt den /invsee Command zu verwenden
+- `core.essentials.ping` -> Erlaubt den /ping Command zu verwenden
 
 > ### Commands
 - `/gamemode [GAMEMODE] (Spieler)` -> Setzt den Spielmodus des Spielers zu dem angegebenen Modus
@@ -275,6 +305,9 @@ Klasse des Commands ist [hier zu finden](https://github.com/Skiftstar/curry-serv
 - `/discord` -> Gibt den Discord Link aus
   - Aliases: `/dc`
 - `/sReload` -> Reloaded die Plugin Config und die Language Files wodurch man nicht den kompletten Server reloaden muss
+- `/vanish` -> Macht dich für andere Spieler unsichtbar, entfernt dich von TAB und sendet eine Fake-Leave Nachricht
+- `/invsee [Spieler]` -> Erlaubt es dir das Inventar eines Spielers zu sehen und Items zu entfernen/hinzuzufügen
+- `/ping` -> Zeigt dir deinen Ping zum Server
 
 > ### Andere Features
 - Custom Join/Leave Nachrichten
